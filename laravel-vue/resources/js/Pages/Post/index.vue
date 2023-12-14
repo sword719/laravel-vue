@@ -29,8 +29,8 @@
                                 <td class="px-4 py-2">Action</td>
                             </thead>
                             <tbody>
-                                <tr v-for="post in posts.data" :key="post.id">
-                                    <td class="px-4 py-2">{{ post.id }}</td>
+                                <tr v-for="(post, index) in posts.data" :key="post.id">
+                                    <td class="px-4 py-2">{{ index + 1 }}</td>
                                     <td class="px-4 py-2">{{ post.score }}</td>
                                     <td class="px-4 py-2">{{ post.date }}</td>
                                     <td class="px-4 py-2">{{ post.time }}</td>
